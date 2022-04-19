@@ -1,0 +1,28 @@
+<html>
+<body>
+<script>
+let r1, r2;
+const a = prompt("Enter the first number: ");
+const b = prompt("Enter the second number: ");
+const c = prompt("Enter the third number: ");
+let d = (b * b) - (4 * a * c);
+if (d > 0)
+ {
+    root1 = (-b + Math.sqrt(d)) / (2 * a);
+    root2 = (-b - Math.sqrt(d)) / (2 * a);
+    document.write("the roots of qudratic eq are"+r1+" "+r2);
+}
+else if (d == 0)
+ {
+    r1 = r2 = (-b) / (2 * a);
+    document.write("The roots of quadratic equation are"+r1+" "+r2);
+}
+else 
+{
+    let real = (-b / (2 * a)).toFixed(2);
+    let imag = (Math.sqrt(-d) / (2 * a)).toFixed(2);
+    document.write("The roots of quadratic equation are"+real+"+i"+imag "and" +real+"-i"+imag);
+}
+</script>
+</body>
+</html>
